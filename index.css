@@ -96,7 +96,8 @@ body{
 }
 
 .main-nav__item a:hover,
-.main-nav__item a:active
+.main-nav__item a:active,
+.main-nav__item a:focus
 {
   background-color: #595A4C;
   color:#ffffff;
@@ -133,6 +134,7 @@ body{
   width: 76%;
 }
 
+/* FORMATOWANIA ARTYKUŁU HOME */
 
 #Home {
   display: flex;
@@ -141,7 +143,7 @@ body{
   justify-content: space-between;
 }
 
-.main-article__section {
+.main-article-section__home {
   max-width:45%;
   min-width: 220px;
   margin:1rem 1rem 1rem 0;
@@ -150,25 +152,67 @@ body{
   box-shadow: 5px 5px 20px #595A4C;
 }
 
-.main-article__section:hover {
+.main-article-section__home:hover {
 background:white;
 transform: scale(1.05);
 }
 
-.main-article__section .section-header {
+.main-article-section__home .section-header {
   font-size: 2rem;
   font-weight: 700;
   color:  #595A4C;
   text-align: center;
 }
 
-.main-article__section p {
+.main-article-section__home p {
   font-size: 1rem;
   font-weight: 400;
   color:rgb(34, 34, 34);
   text-align: justify;
 }
 
+/* STYLE ARTYKUŁU OFERTA */
+
+#Oferta {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-article-section__oferta {
+  max-width:90%;
+  min-width: 220px;
+  margin:1rem 1rem 1rem 0;
+  padding: 0.5rem;
+  background:rgba(89,90,76,0.1);
+  box-shadow: 5px 5px 20px #595A4C;
+}
+
+.main-article-section__oferta:hover {
+background:white;
+transform: scale(1.05);
+}
+
+.main-article-section__oferta .section-header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color:  #595A4C;
+  text-align: start;
+}
+
+.main-article-section__oferta p {
+  font-size: 1rem;
+  font-weight: 400;
+  color:rgb(34, 34, 34);
+  text-align: justify;
+}
+
+
+
+/* 
 
 .main-article_photos{
   display: flex;
@@ -194,7 +238,7 @@ transform: scale(1.05);
   padding:10px;
   font-size: 20px;
   color: #7a3501;
-}
+} */
 
 
 .sidebar {
