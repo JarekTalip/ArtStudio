@@ -1,15 +1,25 @@
 const mainNavItems =document.querySelectorAll("nav ul li");
 const alink = document.querySelectorAll(".main-nav__items a");
 
+const UkryjWszystkie = () => {
+        const articles = document.querySelectorAll(".main-container article");
+        articles.forEach((article) => {
+                article.classList.remove('open');
+                article.style.display = "none";
+});
+}
+
 const WyborArtykulu = (element) => {
         if (element.target.getAttribute('href') !== null) {
-        console.log(element.target);
-        const cel = element.target.getAttribute('href');
-        console.log(cel);
-        const artykul = document.querySelector(cel);
-        console.log(artykul);
-        artykul.style.display = "none";}
+                const cel = element.target.getAttribute('href');
+                const artykul = document.querySelector(cel);
+                UkryjWszystkie();
+                artykul.style.display = "flex";
+                setTimeout(() => {
+                        artykul.classList.add("open");
+                        }, 10);
 }
+};
 
 alink.forEach(() => {
         addEventListener('click', WyborArtykulu);
