@@ -163,7 +163,7 @@ background:white;
 transform: scale(1.05);
 }
 
-.main-article-section__home .section-header {
+.section-header {
   font-size: 2rem;
   font-weight: 700;
   color:  #595A4C;
@@ -180,7 +180,7 @@ transform: scale(1.05);
 /* STYLE ARTYKUŁU OFERTA */
 
 #Oferta {
-  margin-top: 12rem;
+  /* margin-top: 12rem; */
   position: relative;
   top: 12rem;
   display: none;
@@ -223,6 +223,68 @@ transform: scale(1.05);
   text-align: justify;
 }
 
+#Onas {
+  /* margin-top: 12rem; */
+  position: relative;
+  top: 14rem;
+  display: none;
+  opacity:0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-article-section__Onas {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  max-width:95%;
+  min-width: 220px;
+  height: auto;
+  margin:1rem 1rem 1rem 0;
+  padding: 0.5rem;
+  background:rgba(207, 207, 197, 0.6);
+  box-shadow: 5px 5px 20px #595A4C;
+}
+
+.main-article-section__Onas:hover {
+background:white;
+transform: scale(1.05);
+}
+
+.main-article-section__Onas .section-header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  /* letter-spacing: 1px; */
+  color:  #595A4C;
+  text-align: center;
+}
+
+.main-article-section__Onas p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color:rgb(34, 34, 34);
+  text-align: justify;
+}
+
+.Onas-photo {
+width:28%;
+}
+
+.Onas-photo img {
+  height:200px;
+  width:auto;
+}
+
+.main-article-section__Onas-text {
+  width:60%;
+  
+}
 .open {
   opacity:1 !important;
   transform: scale(1) !important;
