@@ -22,8 +22,8 @@ body{
   top:0vh;
   left:0vw;
   color: var(--normaltextcolor);
-
 }
+
 
 .ukryj {
   display: none;
@@ -46,43 +46,41 @@ body{
   font-family: 'Oswald', sans-serif;
   color:var(--logotext1);
   background: var(--backcolor1);
-  /* padding: 1rem; */
   margin: 1rem auto 1rem auto;
   padding: 0.5rem 1rem;
   width:80%;
   display: grid;
-  grid-template-columns: 25% 1fr 2fr 2fr 2fr;
-  grid-template-rows: 4rem 4rem 2rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 8rem 6rem 6rem 1rem;
   grid-gap: 0.5rem;
-  grid-template-areas: "logo . sublogo sublogo sublogo" 
-                        "logo . navigation navigation navigation"
-                        "hrline hrline hrline hrline hrline";
+  grid-template-areas: "logo logo" 
+                        "sublogo sublogo"
+                        "navigation navigation"
+                        "hrline hrline"
 }
 
 .logo {
   grid-area: logo;
-  justify-content: center;
-  align-items: center;
   height: 100%;
 }
 
 .logo img {
   display:block;
+  margin: auto;
   height: 100%;
 }
 
 .sublogo {
   grid-area: sublogo;
-  justify-content: end;
 }
 
 .sublogo h1 {
   margin:0;
   margin-block-end: 0;
   margin-block-start: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
-  text-align: end;
+  text-align: center;
 }
 
 .main-nav {
@@ -93,7 +91,7 @@ body{
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 5rem;
   padding: 0;
@@ -102,13 +100,14 @@ body{
 
 .main-nav__item {
   list-style-type: none;
+  margin: 0.5rem 0.5rem;
 }
 
 .main-nav__item a {
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.3rem;
   color:var(--logotext1);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   box-shadow: 3px 3px 15px -2px var(--logotext1);
   background-color: rgba(89,90,76,0.2);
@@ -128,10 +127,81 @@ body{
 .horizontal-line__1{
   border: 2px solid var(--logotext1);
   color: var(--logotext1);
-  margin: 1rem 0;
+  margin: 0.4rem 0;
   grid-area: hrline;
-  /* height: 50px; */
 }
+
+@media (min-width: 50rem) {
+  .main-header{
+  
+    font-family: 'Oswald', sans-serif;
+    color:var(--logotext1);
+    background: var(--backcolor1);
+    /* padding: 1rem; */
+    margin: 1rem auto 1rem auto;
+    padding: 0.5rem 1rem;
+    width:80%;
+    display: grid;
+    grid-template-columns: 25% 1fr 2fr 2fr 2fr;
+    grid-template-rows: 4rem 4rem 2rem;
+    grid-gap: 0.5rem;
+    grid-template-areas: "logo . sublogo sublogo sublogo" 
+                          "logo . navigation navigation navigation"
+                          "hrline hrline hrline hrline hrline";
+  }
+
+  .logo {
+    grid-area: logo;
+    height: 100%;
+  }
+  
+  .logo img {
+    display:block;
+    height: 100%;
+  }
+
+  .sublogo {
+    grid-area: sublogo;
+  }
+  
+  .sublogo h1 {
+    margin:0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: end;
+  }
+  
+  .main-nav__items {
+    justify-content: space-between;
+    align-items: center;  
+  }
+  
+  .main-nav__item a {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .main-nav__item a:hover,
+  .main-nav__item a:active,
+  .main-nav__item a:focus
+  {
+    transform: scale(1.1) rotateZ(360deg);
+  }
+  
+  .horizontal-line__1{
+    border: 2px solid var(--logotext1);
+    color: var(--logotext1);
+    margin: 1rem 0;
+    grid-area: hrline;
+  }
+
+}
+
+
+
+
 
 /* FORMATOWANIA GŁÓWNEJ CZĘŚCI STRONY */
 
